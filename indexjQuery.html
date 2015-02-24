@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>NYCDA Assignment Six</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<body>
+
+	<div class="section">
+	<p>Click me</p>
+	<p>watch me</p>
+	<p>slowly fade away</p>
+	</div>
+
+	<div class="section2">
+	<p>Click me</p>
+	<p>wait -- I wanted to tell you something!</p>
+	</div>
+	
+	<div class="section3">
+	<p>Click me</p>
+	<p>I'M REALLY LOUD</p>
+	<p>but I can be quiet</p>
+	</div>
+
+	<div class="section4">
+	<p>Click me</p>
+	<p>I'll disappear</p>
+	<p>Will I come back?</p>
+	</div>
+
+	<style>
+		.section2 {
+			background-color: lightblue;
+			width: 50%;
+		}
+	
+	</style>
+
+
+	<script>$(document).ready(function() {
+
+	    $(".section").click(
+
+	    	function(){
+
+	    	$(".section").fadeOut(3000)
+
+	    	}
+
+	    	);
+	    $(".section2").click(
+
+	    	function(){
+
+	    		$(".section2").slideUp(2000);
+	    		
+	    		}
+
+	    	);
+
+	    $(".section3").click(
+
+	    	function(){
+
+	    		$(".section3").animate( {opacity: .5} )
+	    		
+	    		}
+
+	    	);
+	    
+	    $(".section4").click(
+
+	    	function(){
+	    		$(".section4").fadeOut(4000);
+	    		$(".section4").fadeIn(4000);
+	    		
+	    		}
+
+	    	);
+
+
+	})</script>
+
+</body>
+
+</html>
